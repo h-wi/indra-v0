@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>INDRA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">홈</a>
+    <a href="/posts">글</a>
+  </nav>
+
+  <div id="app">
+    <div id="search-bar">
+      <input id="artist-input" type="text" placeholder="아티스트 이름" />
+      <button id="search-btn">검색</button>
+    </div>
+
+    <div id="result-info"></div>  <!-- "총 N개" 같은 메타 정보 -->
+    <div id="table-container"></div>  <!-- 나중에 표 들어올 자리 -->
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
