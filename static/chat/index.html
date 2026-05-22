@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>채팅 — INDRA</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">홈</a>
+    <a href="/posts">글</a>
+    <a href="/chat">채팅</a>
+  </nav>
+
+  <main id="chat-app">
+    <form id="chat-form">
+      <label>
+        <span>비밀번호</span>
+        <input id="password" type="password" autocomplete="current-password" required>
+      </label>
+
+      <label>
+        <span>질문</span>
+        <textarea id="prompt" rows="8" required></textarea>
+      </label>
+
+      <button id="submit" type="submit">보내기</button>
+    </form>
+
+    <p id="status" role="status"></p>
+    <section id="answer" aria-live="polite"></section>
+  </main>
+
+  <script src="/chat/chat.js"></script>
+</body>
+</html>
